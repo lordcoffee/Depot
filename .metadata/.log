@@ -1,0 +1,298 @@
+!SESSION 2013-03-12 13:20:08.206 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_41
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=de_DE
+Framework arguments:  -keyring /Users/christiankoller/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/christiankoller/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-03-12 13:20:36.546
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.aptana.git.core 4 0 2013-03-12 13:22:18.863
+!MESSAGE (Build 3.0.0.1332346356) [ERROR] com.aptana.git.core/debug Unable to correctly parse git version 1.7.12.4 (Apple Git-37)
+!STACK 0
+java.lang.IllegalArgumentException: invalid qualifier: 4 (Apple Git-37)
+	at org.osgi.framework.Version.validate(Version.java:195)
+	at org.osgi.framework.Version.<init>(Version.java:161)
+	at org.osgi.framework.Version.parseVersion(Version.java:225)
+	at com.aptana.git.core.model.GitExecutable.version(GitExecutable.java:399)
+	at com.aptana.git.core.model.GitExecutable.clone(GitExecutable.java:431)
+	at com.aptana.git.ui.CloneJob.run(CloneJob.java:86)
+	at com.aptana.git.ui.internal.wizards.CloneWizard$1.run(CloneWizard.java:47)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+
+!ENTRY com.aptana.ruby.core 4 0 2013-03-12 13:22:29.883
+!MESSAGE (Build 3.0.2.1333568520) [ERROR]  Not supported yet.
+!STACK 0
+java.lang.UnsupportedOperationException: Not supported yet.
+	at org.jrubyparser.ast.LambdaNode.accept(LambdaNode.java:58)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitHashNode(InOrderVisitor.java:414)
+	at org.jrubyparser.ast.HashNode.accept(HashNode.java:57)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitCallNode(InOrderVisitor.java:193)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitCallNode(SourceElementVisitor.java:230)
+	at org.jrubyparser.ast.CallNode.accept(CallNode.java:70)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitLocalAsgnNode(InOrderVisitor.java:456)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitLocalAsgnNode(SourceElementVisitor.java:839)
+	at org.jrubyparser.ast.LocalAsgnNode.accept(LocalAsgnNode.java:62)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitIfNode(InOrderVisitor.java:438)
+	at org.jrubyparser.ast.IfNode.accept(IfNode.java:65)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitDefnNode(InOrderVisitor.java:299)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitDefnNode(SourceElementVisitor.java:346)
+	at org.jrubyparser.ast.DefnNode.accept(DefnNode.java:51)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitClassNode(InOrderVisitor.java:213)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitClassNode(SourceElementVisitor.java:260)
+	at org.jrubyparser.ast.ClassNode.accept(ClassNode.java:68)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitModuleNode(InOrderVisitor.java:517)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitModuleNode(SourceElementVisitor.java:824)
+	at org.jrubyparser.ast.ModuleNode.accept(ModuleNode.java:66)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitNewlineNode(InOrderVisitor.java:525)
+	at org.jrubyparser.ast.NewlineNode.accept(NewlineNode.java:67)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:37)
+	at com.aptana.ruby.core.ast.InOrderVisitor.visitRootNode(InOrderVisitor.java:668)
+	at com.aptana.ruby.core.ast.SourceElementVisitor.visitRootNode(SourceElementVisitor.java:848)
+	at org.jrubyparser.ast.RootNode.accept(RootNode.java:84)
+	at com.aptana.ruby.core.ast.AbstractVisitor.acceptNode(AbstractVisitor.java:53)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.indexAST(RubyFileIndexingParticipant.java:73)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.indexSource(RubyFileIndexingParticipant.java:61)
+	at com.aptana.ruby.internal.core.index.RubyFileIndexingParticipant.index(RubyFileIndexingParticipant.java:37)
+	at com.aptana.index.core.IndexRequestJob.indexFileStores(IndexRequestJob.java:204)
+	at com.aptana.index.core.IndexContainerJob.run(IndexContainerJob.java:109)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 4 1 2013-03-12 13:24:08.678
+!MESSAGE Problems occurred while refreshing local changes
+!SUBENTRY 1 org.eclipse.core.resources 4 1 2013-03-12 13:24:08.679
+!MESSAGE Problems occurred while refreshing local changes
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Errors occurred while refreshing resources with the local file system.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refreshResource(FileSystemResourceManager.java:923)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.refresh(FileSystemResourceManager.java:904)
+	at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1663)
+	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:167)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: The project description file (.project) for 'Depot' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!SUBENTRY 2 org.eclipse.core.resources 4 271 2013-03-12 13:24:08.680
+!MESSAGE Errors occurred while refreshing resources with the local file system.
+!SUBENTRY 3 org.eclipse.core.resources 4 567 2013-03-12 13:24:08.680
+!MESSAGE The project description file (.project) for 'Depot' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY com.aptana.git.core 4 0 2013-03-12 13:24:09.222
+!MESSAGE (Build 3.0.0.1332346356) [ERROR] com.aptana.git.core/debug /Users/christiankoller/DepotOld/Depot/.git/config (No such file or directory)
+!STACK 0
+java.io.FileNotFoundException: /Users/christiankoller/DepotOld/Depot/.git/config (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1288)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1226)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1177)
+	at com.aptana.git.core.model.GitRepository.commitsAhead(GitRepository.java:1158)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:260)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:158)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.git.core 4 0 2013-03-12 13:24:09.246
+!MESSAGE (Build 3.0.0.1332346356) [ERROR] com.aptana.git.core/debug /Users/christiankoller/DepotOld/Depot/.git/config (No such file or directory)
+!STACK 0
+java.io.FileNotFoundException: /Users/christiankoller/DepotOld/Depot/.git/config (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1288)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1226)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1177)
+	at com.aptana.git.core.model.GitRepository.commitsBehind(GitRepository.java:1204)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:269)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:158)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.aptana.git.core 4 0 2013-03-12 13:24:24.826
+!MESSAGE (Build 3.0.0.1332346356) [ERROR] com.aptana.git.core/debug /Users/christiankoller/DepotOld/Depot/.git/config (No such file or directory)
+!STACK 0
+java.io.FileNotFoundException: /Users/christiankoller/DepotOld/Depot/.git/config (No such file or directory)
+	at java.io.FileInputStream.open(Native Method)
+	at java.io.FileInputStream.<init>(FileInputStream.java:120)
+	at com.aptana.git.core.model.GitRepository.configContents(GitRepository.java:1288)
+	at com.aptana.git.core.model.GitRepository.remoteTrackingBranch(GitRepository.java:1226)
+	at com.aptana.git.core.model.GitRepository.matchingRemoteBranch(GitRepository.java:1177)
+	at com.aptana.git.core.model.GitRepository.commitsAhead(GitRepository.java:1158)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorateProject(GitLightweightDecorator.java:260)
+	at com.aptana.git.ui.internal.GitLightweightDecorator.decorate(GitLightweightDecorator.java:158)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:263)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:81)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:365)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:347)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:370)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:330)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.ui.ide 4 4 2013-03-12 13:24:24.858
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2013-03-12 13:24:24.858
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2013-03-12 13:24:24.859
+!MESSAGE The project description file (.project) for 'Depot' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-03-12 13:24:26.325
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.StudioAnalytics$1
+!SESSION 2013-03-12 13:24:50.584 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_41
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=de_DE
+Framework arguments:  -keyring /Users/christiankoller/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/christiankoller/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.resources 2 10035 2013-03-12 13:24:57.021
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 567 2013-03-12 13:24:57.070
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2013-03-12 13:24:57.071
+!MESSAGE Could not read metadata for 'Depot'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: The project description file (.project) for 'Depot' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:851)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:874)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:854)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:703)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1528)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2503)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2251)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:439)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$1.run(BundleContextImpl.java:711)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:702)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:683)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:381)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:299)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:440)
+	at org.eclipse.osgi.internal.loader.BundleLoader.setLazyTrigger(BundleLoader.java:268)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:463)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:216)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:400)
+	at org.eclipse.osgi.internal.loader.SingleSourcePackage.loadClass(SingleSourcePackage.java:35)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:473)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:429)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:107)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at com.aptana.rcp.IDEApplication.start(IDEApplication.java:125)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2013-03-12 13:24:57.072
+!MESSAGE The project description file (.project) for 'Depot' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+
+!ENTRY org.eclipse.core.net 1 0 2013-03-12 13:24:59.238
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-03-12 13:25:12.914
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.StudioAnalytics$1
+!SESSION 2013-03-12 13:32:15.136 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_41
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=de_DE
+Framework arguments:  -keyring /Users/christiankoller/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/christiankoller/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-03-12 13:32:20.491
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.aptana.scripting 4 0 2013-03-12 13:42:49.705
+!MESSAGE (Build 3.0.0.1332781285) [ERROR]  Resource '/Depot' is not open.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource '/Depot' is not open.
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:150)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:266)
+	at org.eclipse.core.internal.resources.Container.members(Container.java:249)
+	at com.aptana.scripting.model.BundleMonitor.handleProjectDeleteEvent(BundleMonitor.java:593)
+	at com.aptana.scripting.model.BundleMonitor.resourceChanged(BundleMonitor.java:549)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:291)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:285)
+	at org.eclipse.core.internal.events.NotificationManager.handleEvent(NotificationManager.java:261)
+	at org.eclipse.core.internal.resources.Workspace.broadcastEvent(Workspace.java:390)
+	at org.eclipse.core.internal.resources.Resource.broadcastPreDeleteEvent(Resource.java:1994)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:765)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:344)
+	at org.eclipse.ltk.core.refactoring.resource.DeleteResourceChange.perform(DeleteResourceChange.java:132)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:92)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:218)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:121)
+!SUBENTRY 1 org.eclipse.core.resources 4 372 2013-03-12 13:42:49.707
+!MESSAGE Resource '/Depot' is not open.
+
+!ENTRY org.eclipse.core.jobs 2 2 2013-03-12 13:45:25.242
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.aptana.usage.StudioAnalytics$1
+!SESSION 2013-05-05 17:08:29.862 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_41
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=de_DE
+Framework arguments:  -keyring /Users/christiankoller/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -keyring /Users/christiankoller/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-05-05 17:08:46.430
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2013-05-05 17:46:01.031 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_41
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86, WS=cocoa, NL=de_DE
+Framework arguments:  -keyring /Users/christiankoller/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86 -data /Users/christiankoller/DepotOld -keyring /Users/christiankoller/.eclipse_keyring -consoleLog -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2013-05-05 17:46:11.115
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
