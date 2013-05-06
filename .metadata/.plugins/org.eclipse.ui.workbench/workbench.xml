@@ -58,9 +58,7 @@
 </view>
 <view id="com.aptana.explorer.view" partName="App Explorer">
 <viewState CommonNavigator.LINKING_ENABLED="0" GitChangedFilesFilterEnabled="" activeProject="app">
-<project name="app">
-<selection>
-<element path="/app"/>
+<project name="app">&#x0A;<selection>&#x0A;<element path="/app"/>
 </selection>
 </project>
 </viewState>
