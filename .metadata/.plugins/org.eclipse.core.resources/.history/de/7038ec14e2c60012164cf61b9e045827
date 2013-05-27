@@ -13,8 +13,8 @@
   </div>
   <div id="columns">
   	<div id="side">
-  	  <div id="cart">
-  	  	<%= render @cart %>
+  	  <div idid="cart">
+  	  	<%= render @cart %
   	  </div>
   	  <ul>
   	  	<li><a href="http://www....">Home</a></li>
